@@ -124,3 +124,7 @@ main{
 .flex{
     flex:1
 }
+
+.produtos-cadastrados-header{
+    width:100%;
+}
