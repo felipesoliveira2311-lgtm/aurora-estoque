@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aurora-estoque</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- SIDEBAR -->
@@ -15,8 +17,8 @@
             <div class="display aligm-center">
                 <div><img src="#"></div>
                 <div>
-                <h2> Controle de Estoque</h2>
-                <p>...</p>
+                    <h2> Controle de Estoque</h2>
+                    <p>...</p>
                 </div>
             </div>
 
@@ -26,61 +28,96 @@
                 <div><img src="#">Relatório</div>
             </ul>
         </aside>
-        
 
-        
 
-    <!-- MAIN -->
-     <main class="border">
 
-        <div class=" conteiner display login justify-end">
 
-            <div><img src="#"> Marcelo</div>
-            <ul >
-                <a src="#">.</a>
-                <a src="#"></a>
-            </ul>
-        </div>
-        <hr>
+        <!-- MAIN -->
+        <main class="border">
 
-        <div class="conteiner">
-            <h1> Bem-vindo, ... ! </h1>
-            <p>Aqui está um resumo do seu estoque.</p>
-            
-            <section class="mt card-metricas gap-20 display" id="card-metricas">
+            <div class=" conteiner display login justify-end">
 
-                <div  class="card-total-produtos card-metricas display border">
+                <div><img src="#"> Marcelo</div>
+                <ul>
+                    <a src="#">.</a>
+                    <a src="#"></a>
+                </ul>
+            </div>
+            <hr>
 
-                <div class="card-img display align-center"><img src=#></div>
-                <div>
-                    <h3>Total de Produtos</h3>
-                    <h2>12</h2>
-                </div>
-                </div>
-                
-                 <div  class="card-total-produtos card-metricas display border">
+            <div class="conteiner">
+                <h1> Bem-vindo, ... ! </h1>
+                <p>Aqui está um resumo do seu estoque.</p>
 
-                    <div class="card-img display align-center"><img src=#></div>
-                    <div>
-                        <h3>Total de Produtos</h3>
-                        <h2>12</h2>
+                <section class="mt-20 card-metricas gap-20 display" id="card-metricas">
+
+                    <div class="card-total-produtos card-metricas display border">
+
+                        <div class="card-img display align-center"><img src=#></div>
+                        <div>
+                            <h3>Total de Produtos</h3>
+                            <h2>12</h2>
+                        </div>
                     </div>
-                 </div>
-                
-                 <div  class="card-total-produtos card-metricas display border">
 
-                    <div class="card-img display align-center"><img src=#></div>
-                    <div>
-                        <h3>Total de Produtos</h3>
-                        <h2>12</h2>
-                </div>
+                    <div class="card-total-produtos card-metricas display border">
+
+                        <div class="card-img display align-center"><img src=#></div>
+                        <div>
+                            <h3>Total de Produtos</h3>
+                            <h2>12</h2>
+                        </div>
+                    </div>
+
+                    <div class="card-total-produtos card-metricas display border">
+
+                        <div class="card-img display align-center"><img src=#></div>
+                        <div>
+                            <h3>Total de Produtos</h3>
+                            <h2>12</h2>
+                        </div>
+                    </div>
+
+                </section>
             </div>
 
-            </section>
-        </div>
+            <!-- CADASTRAR PRODUTO -->
+            <section class="mt-20 conteiner " id="cadastrar-produto">
 
-     </main>
+                <div class="mt-20 cadastrar-produto conteiner gap-20">
+
+                <div class="align-center display">
+                <i class="mt-10">+</i>
+                <h3 class="mt-10">Cadastrar Produto</h3>
+                </div>
+                
+                
+                <div class="display gap-20">
+                <div class="mt-10 cadastrar-campos display flex-column flex">
+                    <label for="nome-produto">Nome do Produto</label>
+                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg">
+                </div>
+
+                <div class="mt-10 cadastrar-campos display flex-column flex">
+                    <label for="nome-produto">Nome do Produto</label>
+                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg">
+                </div>
+
+                <div class="mt-10 cadastrar-campos display flex-column flex">
+                    <label for="nome-produto">Nome do Produto</label>
+                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg">
+                </div>
+
+                <button id="mt-10 adicionar-produto">+ Adicionar Produto</button>
+                           
+            </section>
+
+        
+
+
+        </main>
 
 
 </body>
+
 </html>
