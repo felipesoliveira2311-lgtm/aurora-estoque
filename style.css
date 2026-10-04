@@ -125,6 +125,12 @@ main{
     flex:1
 }
 
+#produtos-cadastrados{
+    border:1px solid;
+    border-radius:12px;
+}
+
 .produtos-cadastrados-header{
-    width:100%;
+    border:1px solid;
+    border-radius:12px;
 }
