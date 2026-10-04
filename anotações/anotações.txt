@@ -1,1 +1,3 @@
 height: 100hv; - Faz com que o elemento ocupe 100% da altura do elemento pai. Importante para responsividade inclusive.
+
+jusitify-content: flex-end; - coloca os filhos para o sentido de main-end

@@ -35,6 +35,18 @@ body{
     justify-content: space-between;
 }
 
+.justify-end{
+    justify-content: flex-end;
+}
+
+.align-end{
+    align-items: end;
+}
+
+.border{
+    border:1px solid black;
+}
+
 
 /* SIDEBAR */
 
@@ -48,3 +60,12 @@ aside{
 aside ul img {
     padding-right:20px;
 }
+
+header{
+    width:100%;
+    flex:1;
+    border-bottom:3px solid #eff3f9;
+    height:50px;
+    background-color: #FFFFFF;
+}
+
