@@ -1,0 +1,50 @@
+/* CONFIGURAÇÕES GERAIS */
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+
+
+/* CONFIGURAÇÕES DE CONSTRUÇÃO */
+
+.display {
+    display:flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.aligm-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+
+/* SIDEBAR */
+
+aside{
+    background-color:#131f2f;
+    color:white;
+    padding:30px;
+    line-height:3.0;
+    height: 100vh;
+}
+aside ul img {
+    padding-right:20px;
+}
