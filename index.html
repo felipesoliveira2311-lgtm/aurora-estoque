@@ -51,30 +51,30 @@
 
                 <section class="mt-20 card-metricas gap-20 display" id="card-metricas">
 
-                    <div class="card-total-produtos card-metricas display ">
+                    <div class="card-geral-produtos card-metricas display ">
 
                         <div class="card-img display align-center"><img src=#></div>
                         <div>
                             <h3>Total de Produtos</h3>
-                            <h2>12</h2>
+                            <h2 id="total-produtos-card">12</h2>
                         </div>
                     </div>
 
-                    <div class="card-total-produtos card-metricas display ">
+                    <div class="card-geral-produtos card-metricas display ">
 
                         <div class="card-img display align-center"><img src=#></div>
                         <div>
-                            <h3>Total de Produtos</h3>
-                            <h2>12</h2>
+                            <h3>Unidades em Estoque</h3>
+                            <h2 id="quantidade-produtos-card">12</h2>
                         </div>
                     </div>
 
-                    <div class="card-total-produtos card-metricas display ">
+                    <div class="card-geral-produtos card-metricas display ">
 
                         <div class="card-img display align-center"><img src=#></div>
                         <div>
-                            <h3>Total de Produtos</h3>
-                            <h2>12</h2>
+                            <h3>Produtos com Estoque Baixo</h3>
+                            <h2 >12</h2>
                         </div>
                     </div>
 
@@ -84,6 +84,7 @@
             <!-- CADASTRAR PRODUTO -->
             <section class="mt-20 conteiner " id="cadastrar-produto">
 
+            <!-- CADASTRAR PRODUTO HEADER -->
                 <div class="mt-20 cadastrar-produto conteiner gap-20">
 
                 <div class="align-center display">
@@ -91,31 +92,33 @@
                 <h3 class="mt-10">Cadastrar Produto</h3>
                 </div>
                 
-                
+                <!-- CADASTRAR PRODUTO VALORES -->
                 <div class="display gap-20">
                 <div class="mt-10 cadastrar-campos display flex-column flex">
                     <label for="nome-produto">Nome do Produto</label>
-                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg">
+                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg" required>
                 </div>
 
                 <div class="mt-10 cadastrar-campos display flex-column flex">
-                    <label for="nome-produto">Nome do Produto</label>
-                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg">
+                    <label for="quantidade-produto">Quantidade</label>
+                    <input type="text" id="quantidade-produto" placeholder="Ex: 50" required>
                 </div>
 
                 <div class="mt-10 cadastrar-campos display flex-column flex">
-                    <label for="nome-produto">Nome do Produto</label>
-                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg">
+                    <label for="estoque-minino">Estoque Minímo</label>
+                    <input type="text" id="estoque-minimo" placeholder="Ex: 10" required>
                 </div>
 
-                <button id="mt-10 adicionar-produto">+ Adicionar Produto</button>
+                <button id="adicionar-produto" class="mt-10 adicionar-produto">+ Adicionar Produto</button>
                            
             </section>
 
             <!-- PRODUTOS CADASTRADOS -->
              <section class="mt-20 conteiner ">
-                <div id="produtos-cadastrados" class="produto-cadastrado-header conteiner gap-20 display justify-between ">
-                    <div class=" align-center  mt-10 display">
+
+            <!-- PRODUTOS CADASTRADOS HEADER -->
+                <div class="produto-cadastrado-header conteiner gap-20 display justify-between">
+                    <div class=" align-center mt-10 display">
                         <img src="#">
                         <h3>
                           Produtos Cadastrados
@@ -129,7 +132,20 @@
                     </div>
                 </div>
 
-                    <div class="produtos-cadastrados-conteudo">
+                <!-- CONTEUDO PRODUTOS CADASTRADOS -->
+
+                    <div class=" border display gap-20 produtos-cadastrados-conteudo" id="produtos-cadastrados-conteudo">
+
+                        <div class="colunas-lista" id="produto-lista">Produto</div>
+
+                        <div class="colunas-lista" id="quantidade-lista">Quantidade</div>
+
+                        <div class="colunas-lista" id="estoque-minimo-lista">Estoque Mínimo</div>
+
+                        <div class="colunas-lista" id="status-lista">Status</div>
+                        
+                        <div class="colunas-lista" id="acoes-lista">Ações</div>
+
 
                     </div>
 

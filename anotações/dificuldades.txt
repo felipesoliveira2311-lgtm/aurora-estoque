@@ -1,0 +1,44 @@
+FUNCTION:
+
+Tive dificuldade com a primeira vez utilizando function. A logica estava correta e a sintaxe também, mas fiquei dando voltas e alterando partes desnecessárias quando precisava ter declarado a função. Pensei que precisava de uma variável para chamar a função, mas não é necessário.
+
+FOR: 
+
+Estou atualmente com dificuldade no for. A lógica eu pensei e montei corretamente, mas declarei fora do escopo de for a impressão no HTML. Sei que as variáveis não funcionam quando criadas dentro de um escopo especifico e mesmo assim estava pensando em alguma forma para levar a variável para fora quando deveria trazer o DOM para dentro do escopo.
+
+Atualmente a dificuldade com for está sendo comparar valores.
+
+Tenho atualmente: 
+
+  const acrescentarHistorico = () =>{
+    for (let i=0; i < estoque.length; i++){
+
+        let nomeLista = estoque[i].nome;
+
+        let quantidadeLista = estoque[i].quantidade;
+
+        let minimoLista = estoque[i].minimo;
+        
+        let statusLista = estoque[i].quantidade <= estoque[i].minimo ?"Estoque baixo" :"normal";
+    
+         document.querySelector("#produto-lista").innerHTML += `<br>${nomeLista}`
+
+        document.querySelector("#quantidade-lista").innerHTML += `<br>${quantidadeLista}`
+
+        document.querySelector("#estoque-minimo-lista").innerHTML += `<br>${minimoLista}`
+
+        document.querySelector("#status-lista").innerHTML += `<br>${statusLista}`
+    }
+}
+
+acrescentarHistorico();
+
+E EM ESPECIFICO: 
+
+       let statusLista = estoque[i].quantidade <= estoque[i].minimo ?"Estoque baixo" :"normal";
+
+O problema atual é que mesmo em valores maiores ele está apresentando a imagem "Estoque baixo".
+    
+
+Problema resolvido atribuindo definição de Number as declarações de variáveis que atribuíam os valores dos inputs. Comparação estava sendo feita em cima de string e não números.
+
