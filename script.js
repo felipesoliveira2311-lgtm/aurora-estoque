@@ -7,7 +7,7 @@ let estoque = [
 */
 
 const carregarHistorico = () => {
-    const historico = JSON.parse(localStorage.getItem("historico") || "[]");
+    const historico = JSON.parse(localStorage.getItem("historico"));
     return historico;     
 };
 
