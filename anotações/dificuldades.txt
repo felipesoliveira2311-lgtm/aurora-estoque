@@ -1,44 +1,36 @@
-FUNCTION:
-
-Tive dificuldade com a primeira vez utilizando function. A logica estava correta e a sintaxe também, mas fiquei dando voltas e alterando partes desnecessárias quando precisava ter declarado a função. Pensei que precisava de uma variável para chamar a função, mas não é necessário.
-
-FOR: 
-
-Estou atualmente com dificuldade no for. A lógica eu pensei e montei corretamente, mas declarei fora do escopo de for a impressão no HTML. Sei que as variáveis não funcionam quando criadas dentro de um escopo especifico e mesmo assim estava pensando em alguma forma para levar a variável para fora quando deveria trazer o DOM para dentro do escopo.
-
-Atualmente a dificuldade com for está sendo comparar valores.
-
-Tenho atualmente: 
-
-  const acrescentarHistorico = () =>{
-    for (let i=0; i < estoque.length; i++){
+FUNCTION
+Tive dificuldade na primeira vez utilizando uma function. A lógica estava correta e a sintaxe também, mas fiquei dando voltas e alterando partes desnecessárias quando, na verdade, precisava apenas chamar a função.
+Pensei que precisava de uma variável para chamar a função, mas isso não é necessário.
+FOR
+Atualmente estou tendo dificuldade com o for. Pensei e montei a lógica corretamente, mas coloquei a impressão no HTML fora do escopo do for.
+Eu sei que variáveis declaradas dentro de um escopo não podem ser acessadas fora dele e, mesmo assim, estava tentando encontrar uma forma de levar a variável para fora, quando deveria simplesmente trazer a manipulação do DOM para dentro do escopo.
+Minha dificuldade seguinte com o for foi na comparação de valores.
+Eu tinha:
+const acrescentarHistorico = () => {
+    for (let i = 0; i < estoque.length; i++) {
 
         let nomeLista = estoque[i].nome;
-
         let quantidadeLista = estoque[i].quantidade;
-
         let minimoLista = estoque[i].minimo;
-        
-        let statusLista = estoque[i].quantidade <= estoque[i].minimo ?"Estoque baixo" :"normal";
-    
-         document.querySelector("#produto-lista").innerHTML += `<br>${nomeLista}`
 
-        document.querySelector("#quantidade-lista").innerHTML += `<br>${quantidadeLista}`
+        let statusLista = estoque[i].quantidade <= estoque[i].minimo
+            ? "Estoque baixo"
+            : "Normal";
 
-        document.querySelector("#estoque-minimo-lista").innerHTML += `<br>${minimoLista}`
-
-        document.querySelector("#status-lista").innerHTML += `<br>${statusLista}`
+        document.querySelector("#produto-lista").innerHTML += `<br>${nomeLista}`;
+        document.querySelector("#quantidade-lista").innerHTML += `<br>${quantidadeLista}`;
+        document.querySelector("#estoque-minimo-lista").innerHTML += `<br>${minimoLista}`;
+        document.querySelector("#status-lista").innerHTML += `<br>${statusLista}`;
     }
 }
 
 acrescentarHistorico();
 
-E EM ESPECIFICO: 
+Em específico:
+let statusLista = estoque[i].quantidade <= estoque[i].minimo
+    ? "Estoque baixo"
+    : "Normal";
 
-       let statusLista = estoque[i].quantidade <= estoque[i].minimo ?"Estoque baixo" :"normal";
-
-O problema atual é que mesmo em valores maiores ele está apresentando a imagem "Estoque baixo".
-    
-
-Problema resolvido atribuindo definição de Number as declarações de variáveis que atribuíam os valores dos inputs. Comparação estava sendo feita em cima de string e não números.
-
+O problema era que, mesmo quando a quantidade era maior que o estoque mínimo, o sistema apresentava "Estoque baixo".
+Problema resolvido: os valores capturados dos inputs estavam sendo armazenados como string. Resolvi convertendo os valores de quantidade e estoque mínimo para Number no momento em que eram capturados.
+Assim, a comparação passou a ser feita entre números, e não entre strings.
