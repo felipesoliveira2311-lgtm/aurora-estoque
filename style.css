@@ -48,6 +48,10 @@ a{
     align-items: center;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .justify-between{
     justify-content: space-between;
 }
@@ -130,17 +134,13 @@ main{
     flex:1
 }
 
-#produtos-cadastrados{
+.thead{
+    text-align: start;
     border:1px solid;
-    border-radius:12px;
+    background-color:#66666625;
+    border-start-end-radius:12px;
 }
 
-.produtos-cadastrados-header{
-    border:1px solid;
-    border-radius:12px;
-}
-
-.colunas-lista{
-    flex:1;
-
+.tbody{
+    margin-left:20px;
 }

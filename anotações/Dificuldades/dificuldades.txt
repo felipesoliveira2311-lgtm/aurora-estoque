@@ -34,3 +34,11 @@ let statusLista = estoque[i].quantidade <= estoque[i].minimo
 O problema era que, mesmo quando a quantidade era maior que o estoque mínimo, o sistema apresentava "Estoque baixo".
 Problema resolvido: os valores capturados dos inputs estavam sendo armazenados como string. Resolvi convertendo os valores de quantidade e estoque mínimo para Number no momento em que eram capturados.
 Assim, a comparação passou a ser feita entre números, e não entre strings.
+
+
+
+
+DIFICULDADE COM ACRESCENTAR BOTOES:
+
+	Eu tive uma limitação por conhecimento, não sabia como criar elementos diretamente pelo JavaScript. Agora que sei, vou refatorar a planilha de estoque inteira em JS para deixar o código limpo e conseguir introduzir os botões linha a linha.
+	Aprendi: .createElement() e append().
