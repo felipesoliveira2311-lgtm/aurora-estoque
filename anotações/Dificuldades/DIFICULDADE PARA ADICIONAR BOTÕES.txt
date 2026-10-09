@@ -1,0 +1,28 @@
+DIFICULDADE COM ACRESCENTAR BOTOES:
+
+	Eu tive uma limitação por conhecimento, não sabia como criar elementos diretamente pelo JavaScript. Agora que sei, vou refatorar a planilha de estoque inteira em JS para deixar o código limpo e conseguir introduzir os botões linha a linha.
+	Aprendi: .createElement(),  .appendChild(), classList.add().
+
+	O que resolveu o conflito em questão foi:
+	
+	 const linha = document.createElement ("tr")
+        linha.classList.add("flex",  "align-center",  "display")
+        linha.innerHTML = `
+        <td class="tbody flex">${nomeTabela}</td>
+        <td class="tbody flex">${quantidadeTabela}</td>
+        <td class="tbody flex">${minimoTabela}</td>
+        <td class="tbody flex">${statusTabela}</td>
+        <td class="tbody flex">
+         <button id="table-excluir">❌</button>
+         <button id="table-editar">✏️</button>
+        </td>
+        `
+        document.querySelector("#corpo-tabela").appendChild(linha);
+
+	Basicamente crieu uma constante com um elemento pai com '.createElement()' e coloquei dentro dele o valor ("tr") determinando que o elemento pai é uma linha de tabela.
+
+	Após isso determinei uma classe com .classList.add()
+
+	E então determinei o que cada valor da linha iria representar.
+
+	Coloquei todo esse elemento dentro de uma estrutura de repetição for. Onde toda vez que eu clicar no botão "Adicionar Produto" ele vai criar essa linha com todos os elementos adicionados.

@@ -136,24 +136,31 @@
 
                 
 
-                   <table class="display gap-20 flex-column">
-                    <thead class=" text-start">
+                   <table class="display  flex-column">
+                <div class="">
+                    <thead class=" ">
                         <tr class="display">
-                            <th class=" thead flex ">Produto</th>
+                            <th class="borda-tabela-direita text-start thead flex ">Produto</th>
                             <th class="thead flex">Quantidade</th>
                             <th class="thead flex">Estoque minimo</th>
                             <th class="thead flex">Status</th>
-                            <th class="thead flex">Ações<th>                     
+                            <th class="borda-tabela-esquerda thead flex">Ações<th>                     
                         </tr>
+
                     </thead>
-                    <tbody class="">
-                        <tr class=" flex  align-center display gap-20">
-                            <td class="tbody flex">Produto</td>
-                            <td class="tbody flex">quantidade</td>
-                            <td class="tbody flex">minimo</td>
-                            <td class="tbody flex">status</td>
-                            <td class="tbody flex"><button id="excluir">❌</button><button id="editar">✏️</button></td>
-                            
+
+                </div>
+                    <tbody id="corpo-tabela" class="">
+                        <tr class=" flex  align-center display">
+                            <td id="table-produto" class="tbody flex">Produto</td>
+                            <td id="table-quantidade" class="tbody flex">quantidade</td>
+                            <td id="table-minimo" class="tbody flex">minimo</td>
+                            <td id="table-status" class="tbody flex">status</td>
+                            <td id= "botoes" class="tbody flex">
+                                <button id="table-excluir">❌</button>
+                                <button id="table-editar">✏️</button>
+                            </td>
+                           
                         </tr>
                     </tbody>
                    </table>

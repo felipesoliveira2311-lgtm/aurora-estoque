@@ -1,8 +1,3 @@
-FUNCTION
-Tive dificuldade na primeira vez utilizando uma function. A lógica estava correta e a sintaxe também, mas fiquei dando voltas e alterando partes desnecessárias quando, na verdade, precisava apenas chamar a função.
-Pensei que precisava de uma variável para chamar a função, mas isso não é necessário.
-
-
 FOR
 Atualmente estou tendo dificuldade com o for. Pensei e montei a lógica corretamente, mas coloquei a impressão no HTML fora do escopo do for.
 Eu sei que variáveis declaradas dentro de um escopo não podem ser acessadas fora dele e, mesmo assim, estava tentando encontrar uma forma de levar a variável para fora, quando deveria simplesmente trazer a manipulação do DOM para dentro do escopo.
@@ -37,10 +32,3 @@ O problema era que, mesmo quando a quantidade era maior que o estoque mínimo, o
 Problema resolvido: os valores capturados dos inputs estavam sendo armazenados como string. Resolvi convertendo os valores de quantidade e estoque mínimo para Number no momento em que eram capturados.
 Assim, a comparação passou a ser feita entre números, e não entre strings.
 
-
-
-
-DIFICULDADE COM ACRESCENTAR BOTOES:
-
-	Eu tive uma limitação por conhecimento, não sabia como criar elementos diretamente pelo JavaScript. Agora que sei, vou refatorar a planilha de estoque inteira em JS para deixar o código limpo e conseguir introduzir os botões linha a linha.
-	Aprendi: .createElement() e append().

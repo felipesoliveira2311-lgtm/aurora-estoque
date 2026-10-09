@@ -138,9 +138,19 @@ main{
     text-align: start;
     border:1px solid;
     background-color:#66666625;
-    border-start-end-radius:12px;
 }
 
 .tbody{
     margin-left:20px;
+}
+
+.borda-tabela-direita{
+    border-radius:8px 0  0  0;
+    border:1px solid;
+}
+
+.borda-tabela-esquerda{
+    border-radius: 0 8px 0 0;
+    border:1px solid;
+  
 }

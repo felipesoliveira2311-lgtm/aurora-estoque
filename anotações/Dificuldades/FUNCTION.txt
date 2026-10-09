@@ -1,0 +1,3 @@
+FUNCTION
+Tive dificuldade na primeira vez utilizando uma function. A lógica estava correta e a sintaxe também, mas fiquei dando voltas e alterando partes desnecessárias quando, na verdade, precisava apenas chamar a função.
+Pensei que precisava de uma variável para chamar a função, mas isso não é necessário.
