@@ -1,0 +1,5 @@
+localStorage.setItem("valor_que_deseja_guardar")
+
+localStorage.setItem é utilizando quando desejamos guardar algum valor na memória do NAVEGADOR.
+
+Então se salvarmos valores em google chrome e abrirmos o arquivo no safari, os dados salvos não vão estar lá.

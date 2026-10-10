@@ -1,0 +1,28 @@
+.id - Propriedade
+
+Retorna ou altera o identificador (id) de um elemento HTML.
+
+
+_______________________________________________________________
+
+Sintaxe:
+
+elemento.id
+
+Ex:
+
+HTML:
+<button id="excluir">Excluir</button>
+
+JavaScript:
+console.log(event.target.id);
+_______________________________________________________________
+
+COMPORTAMENTOS IMPORTANTES
+
+- Retorna uma string.
+- Se o elemento não possuir id, retorna "".
+- Também permite alterar o identificador por atribuição.
+
+
+

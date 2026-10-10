@@ -1,0 +1,49 @@
+.remove() - Método do DOM
+
+Remove um elemento HTML da página, incluindo todo conteúdo que estiver dentro dele.
+
+_______________________________________________________________
+
+Sintaxe:
+
+elemento.remove();
+
+elemento - Elemento HTML que será removido.
+
+.remove() - Executa a remoção desse elemento.
+
+EX:
+
+HTML -
+ <div id="produto">
+  <p>Arroz</p>
+  <button id="excluir">Excluir</button>
+ </div>
+
+JavaScript - 
+ let produto = document.querySelector("#produto");
+
+ produto.remove();
+
+Resultado: a div inteira desaparece da página, incluindo o texto e o botão.
+
+_____________________________________________________________
+
+UTILIZANDO COM EVENTOS:
+
+let produto = document.querySelector("#produto");
+let botao = document.querySector("exlcuir");
+
+botão.addEventListener("click", function() {
+	produto.remove();
+)
+
+_____________________________________________________________
+
+COMPORTAMENTOS IMPORTANTES:
+
+- .remove() modifica o DOM imediatamente.
+- Remove o elemento e todos os seus filhos da pagina.
+- Não exclui automaticamente o objetos de array.
+- Não altera os dados salvos no localStorage.
+- Não retorna um valor útil(undefined).

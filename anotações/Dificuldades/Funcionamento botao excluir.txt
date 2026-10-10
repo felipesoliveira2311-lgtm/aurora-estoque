@@ -1,0 +1,12 @@
+Apresentei dificuldades para desenvolver a funcionalidade do botão excluir.
+
+Aprendi o necessário para realizar a exclusão como:
+
+- .splice() 
+- .remove()
+
+A logica foi fácil, eu teria que atribuir a cada nova linha um ID diferente para cada botão. Com isso, apresentei dificuldades no DOM, mas ao final descobri que eu poderia utilizar a própria estrutura da linha da tabela para fazer esse procedimento.
+
+A construção da linha funciona dentro de um "for", então cada vez que um novo produto é adicionado e um objeto é introduzido ao array, o botão recebe o índice do array.
+
+A lógica foi bem  simples, percebi que tenho ainda bastante dificuldade com a manipulação do DOM. Mesmo quando preciso misturar dois conceitos que eu já conheço.

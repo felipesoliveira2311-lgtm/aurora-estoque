@@ -1,0 +1,3 @@
+.className - Propriedade
+
+  O mesmo fundamento de id, porém com classes.

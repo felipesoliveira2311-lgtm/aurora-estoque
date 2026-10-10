@@ -1,0 +1,3 @@
+localStorage.getItem("variavel_que_deseja_recuperar")
+
+localStorage.getItem é utilizado para recuperar uma memória salva no navegador.

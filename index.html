@@ -84,48 +84,48 @@
             <!-- CADASTRAR PRODUTO -->
             <section class="mt-20 conteiner " id="cadastrar-produto">
 
-            <!-- CADASTRAR PRODUTO HEADER -->
+                <!-- CADASTRAR PRODUTO HEADER -->
                 <div class="mt-20 cadastrar-produto conteiner gap-20">
 
-                <div class="align-center display">
-                <i class="mt-10">+</i>
-                <h3 class="mt-10">Cadastrar Produto</h3>
-                </div>
-                
-                <!-- CADASTRAR PRODUTO VALORES -->
-                <div class="display gap-20">
-                <div class="mt-10 cadastrar-campos display flex-column flex">
-                    <label for="nome-produto">Nome do Produto</label>
-                    <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg" required>
-                </div>
+                    <div class="align-center display">
+                        <i class="mt-10">+</i>
+                        <h3 class="mt-10">Cadastrar Produto</h3>
+                    </div>
 
-                <div class="mt-10 cadastrar-campos display flex-column flex">
-                    <label for="quantidade-produto">Quantidade</label>
-                    <input type="text" id="quantidade-produto" placeholder="Ex: 50" required>
-                </div>
+                    <!-- CADASTRAR PRODUTO VALORES -->
+                    <div class="display gap-20">
+                        <div class="mt-10 cadastrar-campos display flex-column flex">
+                            <label for="nome-produto">Nome do Produto</label>
+                            <input type="text" id="nome-produto" placeholder="Ex: Arroz 1kg" required>
+                        </div>
 
-                <div class="mt-10 cadastrar-campos display flex-column flex">
-                    <label for="estoque-minino">Estoque Minímo</label>
-                    <input type="text" id="estoque-minimo" placeholder="Ex: 10" required>
-                </div>
+                        <div class="mt-10 cadastrar-campos display flex-column flex">
+                            <label for="quantidade-produto">Quantidade</label>
+                            <input type="text" id="quantidade-produto" placeholder="Ex: 50" required>
+                        </div>
 
-                <button id="adicionar-produto" class="mt-10 adicionar-produto">+ Adicionar Produto</button>
-                           
+                        <div class="mt-10 cadastrar-campos display flex-column flex">
+                            <label for="estoque-minino">Estoque Minímo</label>
+                            <input type="text" id="estoque-minimo" placeholder="Ex: 10" required>
+                        </div>
+
+                        <button id="adicionar-produto" class="mt-10 adicionar-produto">+ Adicionar Produto</button>
+
             </section>
 
             <!-- PRODUTOS CADASTRADOS -->
-             <section class="mt-20 conteiner ">
+            <section class="mt-20 conteiner ">
 
-            <!-- PRODUTOS CADASTRADOS HEADER -->
+                <!-- PRODUTOS CADASTRADOS HEADER -->
                 <div class="produto-cadastrado-header conteiner gap-20 display justify-between">
                     <div class=" align-center mt-10 display">
                         <img src="#">
                         <h3>
-                          Produtos Cadastrados
+                            Produtos Cadastrados
                         </h3>
                     </div>
-                    <div  class="mt-10 busca">
-                        
+                    <div class="mt-10 busca">
+
                         <label for="pesquisar-produto"></label>
                         <I>🔎</I>
                         <input type="text" id="pesquisar-produto" placeholder="Buscar produto">
@@ -134,39 +134,28 @@
 
                 <!-- CONTEUDO PRODUTOS CADASTRADOS -->
 
-                
 
-                   <table class="display  flex-column">
-                <div class="">
-                    <thead class=" ">
-                        <tr class="display">
-                            <th class="borda-tabela-direita text-start thead flex ">Produto</th>
-                            <th class="thead flex">Quantidade</th>
-                            <th class="thead flex">Estoque minimo</th>
-                            <th class="thead flex">Status</th>
-                            <th class="borda-tabela-esquerda thead flex">Ações<th>                     
-                        </tr>
 
-                    </thead>
+                <table class="display  flex-column">
+                    <div class="">
+                        <thead class=" ">
+                            <tr class="display">
+                                <th class="borda-tabela-direita text-start thead flex ">Produto</th>
+                                <th class="thead flex">Quantidade</th>
+                                <th class="thead flex">Estoque minimo</th>
+                                <th class="thead flex">Status</th>
+                                <th class="borda-tabela-esquerda thead flex">Ações
+                                <th>
+                            </tr>
 
-                </div>
-                    <tbody id="corpo-tabela" class="">
-                        <tr class=" flex  align-center display">
-                            <td id="table-produto" class="tbody flex">Produto</td>
-                            <td id="table-quantidade" class="tbody flex">quantidade</td>
-                            <td id="table-minimo" class="tbody flex">minimo</td>
-                            <td id="table-status" class="tbody flex">status</td>
-                            <td id= "botoes" class="tbody flex">
-                                <button id="table-excluir">❌</button>
-                                <button id="table-editar">✏️</button>
-                            </td>
-                           
-                        </tr>
-                    </tbody>
-                   </table>
-             </section>
+                        </thead>
 
-        
+                    </div>
+                    <tbody id="corpo-tabela" class=""></tbody>
+                </table>
+            </section>
+
+
 
 
         </main>

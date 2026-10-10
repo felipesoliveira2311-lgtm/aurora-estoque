@@ -1,0 +1,8 @@
+variavel_pai.appendChild("variavel_filho").
+
+Essa forma especifica coloca uma variável com um conteúdo HTML dentro de outra variável com um conteúdo HTML. 
+
+Permite armazenar, apenas 1 elemento dentro do elemento pai.
+
+Por minha compreensão ela vir acompanhada geralmente de .createElement("").
+

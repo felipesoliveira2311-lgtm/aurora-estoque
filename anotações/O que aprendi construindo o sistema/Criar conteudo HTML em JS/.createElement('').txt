@@ -1,0 +1,5 @@
+variável.createElement ("elemento pai/filho")
+
+Cria um para a variável que depois podemos modelar com:
+
+variavel.innerHTML = `${}`

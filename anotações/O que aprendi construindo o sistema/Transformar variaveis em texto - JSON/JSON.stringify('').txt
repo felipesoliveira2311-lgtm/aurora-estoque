@@ -1,0 +1,3 @@
+JSON.stringify("variavel_que_deseja_transformar_em_texto")
+
+Entendi que esta variável transforma uma estrutura JavaScript em texto.JSON.

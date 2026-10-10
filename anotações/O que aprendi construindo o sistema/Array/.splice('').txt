@@ -1,0 +1,57 @@
+variavel_array.splic(inicio, quantidade, item1, item2)
+
+inicio - índice onde a alteração começa
+
+quantidade - quantos elementos serão removidos.
+
+item 1 e item 2 - elementos que serão excluídos (OPCIONAL).
+
+
+
+splice() modifica o array original, permitindo remover, 
+adicionar ou substituir elementos a partir de um índice.
+
+_____________________________________________________________
+
+PARA REMOVER ELEMENTOS:
+
+ let frutas = ["Maçã", "Banana", "Uva"]
+
+frutas.splice(1,1);
+
+console.log(frutas);
+
+	Resultado:
+
+ ["Maçã", "Uva"]
+
+_____________________________________________________________
+
+
+PARA ADICIONAR ELEMENTOS:
+
+let frutas = ["Maça", "Uva"];
+
+frutas.splice(1,0, "Banana");
+
+console.log(frutas);
+
+	Resultado:
+
+["Maça", "Banana", "Uva"]
+
+O 0 indica que nenhum elemento será removido.	
+
+Se colocássemos algum valor ao 0, então indicaríamos qual INDICE seria substituído.
+
+_____________________________________________________________
+
+!!! .splice() também retorna os elementos que foram removidos do array:
+
+let frutas = ["Maçã", "Banana", "Uva"];
+
+let removidas = frutas.splice(1,1);
+
+console.log(removidas): //["Banana"]
+console.log(frutas); //["Maçã", "Uva"]
+

@@ -1,0 +1,28 @@
+event.target - Propriedade
+
+Identifica o elemento em que um evento aconteceu originalmente.
+
+é uma propriedade que retorna o elemento onde um evento foi originado.
+
+______________________________________________________________
+
+Sintaxe:
+
+event.target
+
+EX:
+document.addEventListener("click", (event) => {
+    console.log(event.target);
+}
+
+_______________________________________________________________
+
+COMPORTAMENTOS IMPORTANTES:
+
+- event é o objeto recebido pela função que trata o evento.
+- .target identifica onde o evento começou.
+- Pode ser utilizado em eventos de clique, digitação e outros.
+- Não modifica o elemento.
+
+R
+

@@ -1,0 +1,5 @@
+variável.classList.add("classes_definidas").
+
+Este atributo permite colocarmos classes em variáveis com conteúdo HTML.
+
+Utilizado por mim neste projeto para atribuir propriedades CSS para o conteúdo HTML criado dentro do arquivo JavaScript.

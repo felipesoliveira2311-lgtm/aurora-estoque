@@ -1,0 +1,7 @@
+JSON.parse("arquiv_JSON_que_desejamos_converter_para_JavaScript")
+
+Converte texto JSON em dados JavaScript
+
+Durante este projeto entendi que esse arquivo pode ser utilizado para criar um histórico de navegador.
+
+!ACEITA APENAS UMA CHAVE POR CONSULTA.

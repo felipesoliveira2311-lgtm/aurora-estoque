@@ -1,0 +1,5 @@
+
+variavel_array.push("variavel_objetos").
+
+.push("") Aprendi durante este projeto que esta propriedade é utilizada para transferir valores de objetos para uma lista.
+

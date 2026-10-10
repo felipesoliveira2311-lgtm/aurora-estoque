@@ -1,0 +1,1 @@
+Tem exatamente a mesma função de .appendChild(""), porém, permite acrescentar mais de uma variável ao mesmo elemento pai.
